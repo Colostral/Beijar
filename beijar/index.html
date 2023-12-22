@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos nos beijar?</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+            color: white; /* Cor do texto */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .titulo{
+            color: black;
+        }
+
+        #sim, #nao {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            color: white;
+        }
+        #sim {
+            background-color: #4CAF50; /* Cor de fundo verde para o botão "Sim" */
+        }
+        #nao {
+            background-color: #ff3333; /* Cor de fundo laranja para o botão "Não" */
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="titulo">Vamos nos beijar?</h1>
+
+    <button id="sim" onclick="redirecionarParaWhatsapp()">Sim 😍😍😍</button>
+    <button id="nao" onclick="removerBotao()">Não 😭😭😭</button>
+
+    <script>
+        function redirecionarParaWhatsapp() {
+            window.location.href = "https://wa.me/33991124694?text=Sim%20%F0%9F%98%8D%F0%9F%98%8D%F0%9F%98%8D";
+        }
+
+        function removerBotao() {
+            var naoButton = document.getElementById("nao");
+            naoButton.style.display = "none";
+            alert("Esse botão não existe, é coisa da sua cabeça.");
+        }
+    </script>
+
+</body>
+</html>
